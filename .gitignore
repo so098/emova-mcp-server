@@ -6,3 +6,5 @@ build/
 !.claude/skills/
 .mcp.json
 CLAUDE.md
+info.md
+INTERVIEW_QA.md
