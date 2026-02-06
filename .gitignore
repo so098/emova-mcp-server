@@ -8,3 +8,5 @@ build/
 CLAUDE.md
 info.md
 INTERVIEW_QA.md
+
+.github/workflows/weekly-research.yml

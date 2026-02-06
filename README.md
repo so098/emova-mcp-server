@@ -145,6 +145,14 @@ npm run format        # Prettier로 코드 포맷
 npm run build         # TypeScript를 build/로 컴파일
 ```
 
+### 리서치 파이프라인
+
+Claude Code SDK를 활용한 멀티 에이전트 리서치 파이프라인입니다. 3개 가설에 대한 논문 검색 → 분류 → 요약 리포트를 자동 생성합니다.
+
+```bash
+npm run research      # reports/YYYY-MM-DD.md로 리포트 생성
+```
+
 ### 프로젝트 구조
 
 ```
@@ -166,6 +174,9 @@ src/
 │   └── hypotheses.ts         # 가설 리소스 정의
 └── prompts/
     └── emova-prompts.ts      # 프롬프트 템플릿
+scripts/
+└── research-pipeline.ts      # 멀티 에이전트 리서치 파이프라인
+reports/                      # 리서치 리포트 출력 디렉토리
 ```
 
 ## 프로젝트 현황
