@@ -2,6 +2,7 @@ node_modules/
 build/
 .env
 .DS_Store
-.claude/
+.claude/*
+!.claude/commands/
 .mcp.json
 CLAUDE.md
