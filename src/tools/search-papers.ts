@@ -13,11 +13,13 @@ export function registerSearchPapers(server: McpServer): void {
     "search_emova_papers",
     "Emova의 세 가지 가설과 관련된 심리학 논문을 PubMed에서 검색합니다. 감정→행동→회고 기반 자기조절 연구를 찾는 데 사용합니다.",
     {
-      hypothesis: z.enum([
-        "emotion_as_information",
-        "small_actions_self_efficacy",
-        "reflection_pattern_recognition",
-      ]),
+      hypothesis: z
+        .enum([
+          "emotion_as_information",
+          "small_actions_self_efficacy",
+          "reflection_pattern_recognition",
+        ])
+        .describe("검색할 Emova 가설"),
       query: z.string().describe("자유 텍스트 키워드"),
       year_from: z.number().optional().describe("검색 시작 연도"),
       year_to: z.number().optional().describe("검색 종료 연도"),
