@@ -1,6 +1,16 @@
+---
+name: add-emotion
+description: 새 감정 카테고리를 Emova MCP 서버의 refine-task 도구에 추가합니다.
+argument-hint: "[emotion-name]"
+disable-model-invocation: true
+allowed-tools: Bash, Read, Edit, Write, Grep, Glob
+---
+
 새 감정 카테고리를 Emova MCP 서버의 refine-task 도구에 추가합니다.
 
-사용자에게 다음 정보를 질문하세요:
+인자로 감정명이 전달되었으면 사용하세요: `$ARGUMENTS`
+
+사용자에게 다음 정보를 질문하세요 (인자로 감정명이 이미 전달된 경우 1번은 건너뛰세요):
 1. 한국어 감정명 (예: "분노")
 2. 감정 패턴 키워드 6개 (한국어, 예: 분노, 화남, 짜증, 억울, 답답, 열받)
 3. 제안할 micro-action 4개 (한국어, 구체적이고 작은 행동)

@@ -1,3 +1,10 @@
+---
+name: test-mcp
+description: Emova MCP 서버의 통합 테스트를 수행합니다.
+disable-model-invocation: true
+allowed-tools: Bash, Read
+---
+
 Emova MCP 서버의 통합 테스트를 수행합니다.
 
 ## 단계

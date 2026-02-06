@@ -3,6 +3,6 @@ build/
 .env
 .DS_Store
 .claude/*
-!.claude/commands/
+!.claude/skills/
 .mcp.json
 CLAUDE.md

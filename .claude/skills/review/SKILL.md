@@ -1,3 +1,10 @@
+---
+name: review
+description: Emova MCP 서버 코드에 대한 셀프 코드 리뷰를 수행합니다.
+disable-model-invocation: true
+allowed-tools: Bash, Read, Grep, Glob
+---
+
 Emova MCP 서버 코드에 대한 셀프 코드 리뷰를 수행합니다. 아래 체크리스트를 하나씩 확인하고, 각 항목의 통과/실패 여부를 보고하세요.
 
 ## 체크리스트

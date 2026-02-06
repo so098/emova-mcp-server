@@ -1,6 +1,16 @@
+---
+name: add-hypothesis
+description: 새 가설을 Emova MCP 서버에 추가합니다.
+argument-hint: "[hypothesis-key]"
+disable-model-invocation: true
+allowed-tools: Bash, Read, Edit, Write, Grep, Glob
+---
+
 새 가설을 Emova MCP 서버에 추가합니다.
 
-사용자에게 다음 정보를 질문하세요:
+인자로 가설 키가 전달되었으면 사용하세요: `$ARGUMENTS`
+
+사용자에게 다음 정보를 질문하세요 (인자로 가설 키가 이미 전달된 경우 1번은 건너뛰세요):
 1. 가설 키 (snake_case, 예: `emotional_granularity`)
 2. 한국어 이름 (예: "감정 세분화가 자기조절을 돕는다")
 3. PubMed 검색 쿼리 (OR로 연결된 키워드들)
