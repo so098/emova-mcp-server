@@ -1,7 +1,7 @@
 ---
 name: update-readme
 description: 최근 변경사항을 분석하여 README.md 업데이트가 필요한지 확인하고 반영합니다.
-disable-model-invocation: true
+disable-model-invocation: false
 allowed-tools: Bash, Read, Edit, Grep, Glob
 ---
 
